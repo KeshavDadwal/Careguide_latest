@@ -53,7 +53,7 @@ const Client: React.FC<ClientProps> = ({ data, editPopup, handleDelete }) => {
                 <td className="p-2">
                   <div style={{ display: "flex", alignItems: "center" }}>
                     <Link
-                      href={`/poc?name=${encodeURIComponent(client.firstname)}${encodeURIComponent(client.lastname)}&id=${encodeURIComponent(client.id)}`}
+                      href={`/poc?firstname=${encodeURIComponent(client.firstname)}&lastname=${encodeURIComponent(client.lastname)}&id=${encodeURIComponent(client.id)}`}
                       style={{ display: "flex", alignItems: "center", marginRight: "10px", fontSize: "14px" }}
                     >
                       <Image src={Icon5} alt="POC" style={{ width: "20px", height: "15px", marginRight: "5px" }} />
@@ -61,7 +61,7 @@ const Client: React.FC<ClientProps> = ({ data, editPopup, handleDelete }) => {
                     </Link>
                     <button>
                       <Link
-                        href={`/client_video?name=${encodeURIComponent(client.firstname)}${encodeURIComponent(client.lastname)}&id=${encodeURIComponent(client.id)}`}
+                        href={`/client_video?firstname=${encodeURIComponent(client.firstname)}&lastname=${encodeURIComponent(client.lastname)}&id=${encodeURIComponent(client.id)}`}
                         style={{ display: "flex", alignItems: "center", marginLeft: "10px", fontSize: "14px" }}
                       >
                         <Image src={Icon6} alt="Video" style={{ width: "20px", height: "15px", marginRight: "5px" }} />
